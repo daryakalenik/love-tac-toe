@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>love tac toe</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="game">
+    <header class="game__header">
+        <h1>love-tac-toe</h1>
+        <div class="controls">
+            <button class="btn btn--minimize" id="minimize"></button>
+            <button class="btn btn--close" id="close"></button>
+        </div>
+    </header>
+
+    <main class="game__container">
+        <div class="game__wrapper">
+            <section id="starting-screen" class="welcome">
+                <p>let's play tic-tac-toe</p>
+                <button class="btn btn--start" id="start">start</button>
+            </section>
+
+            <section class="playground" id="inner-window" style="display: none">
+                <div class="playground__container">
+                    <p id="title" class="playground__status"></p>
+                    <div id="game-board" class="board"></div>
+                    <div id="bottom-block" class="info"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "love-tac-toe",
+  "version": "1.0.0",
+  "description": "a valentine's day themed tic-tac-toe game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "34.1.1",
+    "electron-builder": "24.9.1"
+  },
+  "build": {
+    "appId": "com.lovetactoe.app",
+    "productName": "love tac toe",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "icon": "assets/icons/mac/icon.icns"
+    },
+    "win": {
+      "icon": "assets/icons/win/icon.ico"
+    },
+    "linux": {
+      "icon": "assets/icons/png"
+    }
+  }
+}
